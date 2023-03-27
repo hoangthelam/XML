@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema version="1.0"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified">
+    <xs:simpleType name="KPrice">
+        <xs:restriction base="xs:integer">
+          <xs:enumeration value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="KQuantity">
+        <xs:restriction base="xs:integer">
+           <xs:enumeration value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="KItemName">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+     <xs:simpleType name="Kkey">
+        <xs:restriction base="xs:ID">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="KCustomerName">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][a-z](1,6)[ ]A-Z][a-z](1,6)(1,6)"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="KOrderDate">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="2017-01-01"/>
+            <xs:maxInclusive value="2020-31-12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="KDetail">
+        <xs:sequence>
+            <xs:element name="ItemNo" type="Kkey"/>
+            <xs:element name="ItemName" type="KItemName"/>
+            <xs:element name="Quantity" type="KQuantity"/>
+            <xs:element name="Price" type="KPrice"/>
+        </xs:sequence>
+   </xs:complexType>
+    <xs:complexType name="KOrder">
+        <xs:sequence>
+            <xs:element name="OrderNo" type="Kkey"/>
+            <xs:element name="OrderDate" type="KOrderDate"/>
+            <xs:element name="CustomerName" type="KCustomerName"/>
+            <xs:element name="Detail" type="KDetail"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Orders" type="KOrder"/>
+</xs:schema>

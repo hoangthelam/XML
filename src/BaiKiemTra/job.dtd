@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT applicants (applicant)*>
+<!ELEMENT applicant (name, gender, address, email, phone, cv?, image?)>
+<!ATTLIST applicant id CDATA #REQUIRED>
+<!ELEMENT name (firstName, middleName?, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT cv (#PCDATA)>
+<!ELEMENT image (#PCDATA)>

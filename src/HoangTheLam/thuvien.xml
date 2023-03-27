@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ThuVien xmlns="https://www.w3schools.com/xml/" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="https://www.w3schools.com/xml/ thuvien.xsd">   
+    
+    <TheDocGia MaDocGia="1">
+        <TenDocGia>Hoàng Thế Lâm</TenDocGia>
+        <NgaySinh>02/08/2001</NgaySinh>
+        <GioiTinh>Nam</GioiTinh>
+        <DiaChi>179 Phan Đình Phùng,Huế</DiaChi>
+        <SDT>0123456789</SDT>
+        <NgayLapThe>01/01/2024</NgayLapThe>
+        <NgayHetHan>01/01/2025</NgayHetHan>
+        <PhieuMuon MaPhieuMuon="P1">
+            <NgayMuon>10/03/2023</NgayMuon>
+            <NgayTra>10/04/2023</NgayTra>
+            <ChiTietPhieuMuon MaPhieuMuon="CT1">
+                <Sach MaSach="S1">
+                    <TenSach>Toán</TenSach>
+                    <TacGia>Bộ Giáo Dục</TacGia>
+                    <NXB>Nhà Sản Xuất Bộ Giáo Dục</NXB>
+                    <TheLoai>Học</TheLoai>
+                    <SoLuong>10</SoLuong>
+                </Sach>
+            </ChiTietPhieuMuon>
+        </PhieuMuon>
+    </TheDocGia>
+    
+    <TheDocGia MaDocGia="2">
+        <TenDocGia>Nguyễn Thị C</TenDocGia>
+        <NgaySinh>15/09/2001</NgaySinh>
+        <GioiTinh>Nữ</GioiTinh>
+        <DiaChi>100 Bùi Thị Xuân,Huế</DiaChi>
+        <SDT>0123123123</SDT>
+        <NgayLapThe>21/12/2022</NgayLapThe>
+        <NgayHetHan>21/12/2024</NgayHetHan>
+        <PhieuMuon MaPhieuMuon="P2">
+            <NgayMuon>26/01/2023</NgayMuon>
+            <NgayTra>26/02/2023</NgayTra>
+            <ChiTietPhieuMuon MaPhieuMuon="CT2">
+                <Sach MaSach="S2">
+                    <TenSach>Lý</TenSach>
+                    <TacGia>Bộ Giáo Dục</TacGia>
+                    <NXB>Nhà Xuất bản Bộ Giáo Dục</NXB>
+                    <TheLoai>Học</TheLoai>
+                    <SoLuong>20</SoLuong>
+                </Sach>
+            </ChiTietPhieuMuon>
+        </PhieuMuon>
+    </TheDocGia>
+    
+    <TheDocGia MaDocGia="3">
+        <TenDocGia>Văn A</TenDocGia>
+        <NgaySinh>09/02/2002</NgaySinh>
+        <GioiTinh>Nam</GioiTinh>
+        <DiaChi>1 Điện Biên Phủ,Huế</DiaChi>
+        <SDT>068686868</SDT>
+        <NgayLapThe>1/1/2022</NgayLapThe>
+        <NgayHetHan>1/1/2024</NgayHetHan>
+        <PhieuMuon MaPhieuMuon="P3">
+            <NgayMuon>26/01/2023</NgayMuon>
+            <NgayTra>26/02/2023</NgayTra>
+            <ChiTietPhieuMuon MaPhieuMuon="CT3">
+                <Sach MaSach="S3">
+                    <TenSach>Hóa</TenSach>
+                    <TacGia>Bộ Giáo Dục</TacGia>
+                    <NXB>Nhà Xuất Bản Bộ Giáo Dục</NXB>
+                    <TheLoai>Học</TheLoai>
+                    <SoLuong>11</SoLuong>
+                </Sach>
+            </ChiTietPhieuMuon>
+        </PhieuMuon>
+    </TheDocGia>
+
+</ThuVien>

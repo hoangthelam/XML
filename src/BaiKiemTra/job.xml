@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE applicants SYSTEM "job.dtd">-->
+
+<applicants xmlns="https://www.w3schools.com/xml/" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="https://www.w3schools.com/xml/ job.xsd">
+    
+    <applicant id="1">
+        <name>
+            <firstName>Thế Lâm</firstName>
+            <middleName></middleName>
+            <lastName>Hoàng</lastName>
+        </name>
+        <gender>Male</gender>
+        <address>179 Phan Đình Phùng</address>
+        <email>hoangthelam2k1@gmail.com</email>
+        <phone>0775362368</phone>
+        <cv></cv>
+        <image> </image>
+    </applicant>
+
+    <applicant id="2">
+        <name>
+            <firstName>Quí</firstName>
+            <middleName>Văn</middleName>
+            <lastName>Nguyễn</lastName>
+        </name>
+        <gender>Female</gender>
+        <address>14 Chợ Cống</address>
+        <email>nyqui@gmail.com</email>
+        <phone>0123456789</phone>
+        <cv></cv>
+        <image></image>
+    </applicant>
+
+    <applicant id="3">
+        <name>
+            <firstName>Quang</firstName>
+            <middleName>Ngọc Nhật</middleName>
+            <lastName>Võ</lastName>
+        </name>
+        <gender>Female</gender>
+        <address>14 Bờ Sông</address>
+        <email>htlam@gmail.com</email>
+        <phone>0912345622</phone>
+        <cv></cv>
+        <image></image>
+    </applicant>
+
+    <applicant id="4">
+        <name>
+            <firstName>Tiến</firstName>
+            <middleName>Công</middleName>
+            <lastName>Nguyễn</lastName>
+        </name>
+        <gender>Female</gender>
+        <address>15 Bờ Hồ</address>
+        <email>tiengey@gmail.com</email>
+        <phone>0912345656</phone>
+        <cv></cv>
+        <image></image>
+    </applicant>
+
+    <applicant id="5">
+        <name>
+            <firstName>Thị</firstName>
+            <middleName></middleName>
+            <lastName>Trần</lastName>
+        </name>
+        <gender>Female</gender>
+        <address>14 Sông Xanh</address>
+        <email>tranthi@gmail.com</email>
+        <phone>0956235678</phone>
+        <cv> </cv>
+        <image> </image>
+    </applicant>
+</applicants>

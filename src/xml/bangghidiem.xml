@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bangghidiem SYSTEM "bangghidiem.dtd">
+
+<bangghidiem msv="19T1021198" gioitinh="Nam" ngay="10" thang="2" nam="2023">
+    <hovaten>Hoang The Lam</hovaten>
+    <ngaysinh>02/08/2001</ngaysinh>
+    <lop>K43_D2</lop>
+    <quequan>TT-Hue</quequan>
+    <chuyennganh>Cong nghe phan mem</chuyennganh>
+    <khoa>CNTT</khoa>
+    <hedaotao>Chinh quy</hedaotao>
+    <khoahoc>K43</khoahoc>
+    <ketqua>
+        <hocphan stt="1">
+            <tenhp>XML va ung dung</tenhp>
+            <sotc>3</sotc>
+            <diemso>10</diemso>
+            <diemchu>Muoi</diemchu>
+        </hocphan>
+        <hocphan stt="2">
+            <tenhp>He co so du lieu phan tan</tenhp>
+            <sotc>2</sotc>
+            <diemso>10</diemso>
+            <diemchu>Muoi</diemchu>
+        </hocphan>
+        <hocphan stt="3">
+            <tenhp>Lap trinh Web</tenhp>
+            <sotc>3</sotc>
+            <diemso>10</diemso>
+            <diemchu>Muoi</diemchu>
+        </hocphan>
+    </ketqua>
+    <diemtb>2.5</diemtb>
+</bangghidiem>
+

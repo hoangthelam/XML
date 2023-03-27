@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="https://www.w3schools.com/xml/"
+            targetNamespace="https://www.w3schools.com/xml/"
+            elementFormDefault="qualified">
+  
+  <xsd:element name="ThuVien">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="TheDocGia" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="TenDocGia" type="xsd:string"/>
+              <xsd:element name="NgaySinh" type="xsd:string"/>
+              <xsd:element name="GioiTinh" type="xsd:string"/>
+              <xsd:element name="DiaChi" type="xsd:string"/>
+              <xsd:element name="SDT" type="xsd:string"/>
+              <xsd:element name="NgayLapThe" type="xsd:string"/>
+              <xsd:element name="NgayHetHan" type="xsd:string"/>
+              <xsd:element name="PhieuMuon">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="NgayMuon" type="xsd:string"/>
+                    <xsd:element name="NgayTra" type="xsd:string"/>
+                    <xsd:element name="ChiTietPhieuMuon">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Sach">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="TenSach" type="xsd:string"/>
+                                <xsd:element name="TacGia" type="xsd:string"/>
+                                <xsd:element name="NXB" type="xsd:string"/>
+                                <xsd:element name="TheLoai" type="xsd:string"/>
+                                <xsd:element name="SoLuong" type="xsd:integer"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="MaSach" type="xsd:string" use="required"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="MaPhieuMuon" type="xsd:string" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="MaPhieuMuon" type="xsd:string" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="MaDocGia" type="xsd:string" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  
+</xsd:schema>

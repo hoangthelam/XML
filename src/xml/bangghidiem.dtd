@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT bangghidiem (hovaten, ngaysinh, lop, quequan, chuyennganh, khoa, hedaotao, khoahoc, ketqua, diemtb)>
+<!ELEMENT hovaten (#PCDATA)>
+<!ELEMENT ngaysinh (#PCDATA)>
+<!ELEMENT lop (#PCDATA)>
+<!ELEMENT quequan (#PCDATA)>
+<!ELEMENT chuyennganh (#PCDATA)>
+<!ELEMENT khoa (#PCDATA)>
+<!ELEMENT hedaotao (#PCDATA)>
+<!ELEMENT khoahoc (#PCDATA)>
+<!ELEMENT ketqua (hocphan+)>
+<!ELEMENT hocphan (tenhp, sotc, diemso, diemchu)>
+<!ELEMENT tenhp (#PCDATA)>
+<!ELEMENT sotc (#PCDATA)>
+<!ELEMENT diemso (#PCDATA)>
+<!ELEMENT diemchu (#PCDATA)>
+<!ELEMENT diemtb (#PCDATA)>
+
+<!ATTLIST bangghidiem msv CDATA #REQUIRED>
+<!ATTLIST bangghidiem gioitinh (Nam|Nu) #REQUIRED>
+<!ATTLIST bangghidiem ngay CDATA #REQUIRED>
+<!ATTLIST bangghidiem thang (1|2|3|4|5|6|7|8|9|10|11|12) #REQUIRED>
+<!ATTLIST bangghidiem nam CDATA #REQUIRED>
+<!ATTLIST hocphan stt CDATA #REQUIRED>
+
+
+
+

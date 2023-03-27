@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.w3schools.com/xml/"
+           xmlns="https://www.w3schools.com/xml/" 
+           elementFormDefault="qualified">
+    
+    
+    <!--ĐỊNH NGHĨA TYPE-->
+    <xs:simpleType name="TAddress">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="256"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="TEmail">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="TName">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="middleName" type="xs:string" minOccurs="0"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="TGender">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Male|Female"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <!--ĐỊNH NGHĨA ELEMENT-->
+    <xs:element name="applicants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="applicant" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="TName"/>
+                            <xs:element name="gender" type="TGender"/>
+                            <xs:element name="address" type="TAddress"/>
+                            <xs:element name="email" type="TEmail" maxOccurs="3"/>
+                            <xs:element name="phone" type="xs:string" maxOccurs="2"/>
+                            <xs:element name="cv" type="xs:base64Binary" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="image" type="xs:base64Binary" minOccurs="0" maxOccurs="1"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+
+</xs:schema>

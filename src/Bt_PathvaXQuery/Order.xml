@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shiporder oderid="889923" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="shiporder.xsd">
+    <orrderperson>John Smith</orrderperson>
+    <shipto>
+        <name>Ola Nordmann</name>
+        <address>Langgt23</address>
+    </shipto>
+</shiporder>
+
